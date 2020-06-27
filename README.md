@@ -3,51 +3,66 @@ page_type: sample
 languages:
 - csharp
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- office-teams
+description: Share Now encourages co-workers to knowledge-based sharing of posts, videos, or topics.
+urlFragment: microsoft-teams-apps-sharenow
 ---
 
-# Official Microsoft Sample
+# Share Now App Template
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+| [Documentation](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Solution-Overview) |
+| ---- | ---- | ---- |
 
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
 
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
+Using the Share Now app in Microsoft Teams, individuals in an organization will be able to add bite-sized information to the content that they want to share with others in the organization. The content can be of the type post, video, blog, podcast etc. but the intent will the same i.e. to introduce your colleagues to the content and share the knowledge with them. Users can also use the app to add posts to their personal list, configure tags to get a more tailored list of content posts & get a weekly/daily digest based on user preferences.
+The app will encourage your peers/colleagues to read or add the shared content to their bucket list and encourage them to post new content and build a healthy competitive environment to learn/read new topics from peers in the team.
 
-Give a short description for your sample here. What does it do and why is it important?
+The app can be used in the following ways:-
+- Discover new content shared across Organization in the personal tab
+- Search for content posts based on preference such as filtering based on tags, type of content etc.,
+- If a post looks interesting to you, upvote the content post and add it to you private list to bookmark it to read later
+- Collaborate using the Messaging extension, share your favorite reads with your colleagues
+- Install the app in a team and set up your monthly or weekly digest as per your preferences to stay updated on the topics
+- Configure the tab in a Channel filtered based on tags to learn together
 
-## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
 
-## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+![Discover tab](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_1.gif)
 
-## Setup
+![Adding and editing a content post](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_2.gif)
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+![Private List](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_3.gif)
 
-## Running the sample
+![Digest preferences](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_4.gif)
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+![Configurable tab](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_5.gif)
 
-## Key concepts
+![Message extension](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Images/SN_6.gif)
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+## Legal notice
+
+This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+
+-	You are responsible for complying with all applicable privacy and security regulations related to use, collection and handling of any personal data by your app.  This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization.
+
+-	Where applicable, you may be responsible for data related incidents or data subject requests for data collect through your app.
+
+-	Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository.  Microsoft’s general trademark guidelines can be found [here](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
+
+-	Use of this template does not guarantee acceptance of your app to the Teams app store.  To make this app available in the Teams app store, you will have to comply with the [submission and validation process](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish), and all associated requirements such as including your own privacy statement and terms of use for your app.
+
+
+## Getting started
+
+Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Solution-overview) to read about what the app does and how it works.
+
+When you're ready to try out Share Now app, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Deployment-guide).
+
+#### Known issue:
+The app is currently not supported on iOS devices. We are actively working on fixing the issue and will update the repo as soon as it is available
 
 ## Contributing
 
