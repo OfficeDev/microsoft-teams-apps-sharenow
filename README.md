@@ -57,7 +57,7 @@ This app template is provided under the [MIT License](https://github.com/OfficeD
 
 ## Getting started
 
-Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-app-goaltracker/wiki/Solution-overview) to read about what the app does and how it works.
+Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Solution-overview) to read about what the app does and how it works.
 
 When you're ready to try out Share Now app, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Deployment-guide).
 
