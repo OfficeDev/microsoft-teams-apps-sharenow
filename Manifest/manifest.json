@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "c1b50ba4-a9fc-46ed-ae5c-c4060461f88b",
+  "packageName": "com.microsoft.teams.apptemplates.sharenow",
+  "developer": {
+    "name": "<company name>",
+    "websiteUrl": "<appDomain>",
+    "privacyUrl": "<privacy url>",
+    "termsOfUseUrl": "<terms of use url>"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Share Now",
+    "full": "Share Now"
+  },
+  "description": {
+    "short": "Encourage co-workers to knowledge-based sharing of posts, videos, or topics.",
+    "full": "Encourage and introduce your co-workers to a widespread knowledge-based sharing of posts, videos, or topics with a bite-sized information on how it influenced them and learn together in Teams."
+  },
+  "accentColor": "#BDBDE6",
+  "configurableTabs": [
+    {
+      "configurationUrl": "<appDomain>/configtab",
+      "canUpdateConfiguration": true,
+      "scopes": [ "team" ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "PersonalDiscoverTab",
+      "name": "Discover",
+      "contentUrl": "<appDomain>",
+      "websiteUrl": "<appDomain>",
+      "scopes": [ "personal" ]
+    },
+    {
+      "entityId": "PrivateList",
+      "name": "Private list",
+      "contentUrl": "<appDomain>/user-private-list",
+      "websiteUrl": "<appDomain>/user-private-list",
+      "scopes": [ "personal" ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "<botId>",
+      "scopes": [ "personal", "team" ],
+      "commandLists": [
+        {
+          "scopes": [ "personal" ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Display commands and what they do."
+            }
+          ]
+        },
+        {
+          "scopes": [ "team" ],
+          "commands": [
+            {
+              "title": "Settings",
+              "description": "Configure topics and frequency of digest."
+            }
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "<botId>",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "allItems",
+          "title": "All",
+          "description": "Show all created posts.",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "allItems",
+              "description": "Enter a keyword or category"
+            }
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "postedByMe",
+          "title": "Posted by me",
+          "description": "Show all posts created by me.",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "postedByMe",
+              "description": "Enter a keyword or category"
+            }
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "popularReads",
+          "title": "Popular",
+          "description": "Show popular posts.",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "popularReads",
+              "description": "Enter a keyword or category"
+            }
+          ],
+          "initialRun": true
+        }
+      ]
+    }
+  ],
+  "validDomains": [
+    "<appDomain>"
+  ],
+  "webApplicationInfo": {
+    "id": "<botId>",
+    "resource": "<ApplicationIdURI>"
+  }
+}

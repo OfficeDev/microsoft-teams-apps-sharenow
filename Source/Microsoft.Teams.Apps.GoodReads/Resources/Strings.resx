@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OpenItem" xml:space="preserve">
+    <value>Open item</value>
+    <comment>Open item button text, which will show on Messaging Extension cards for redirection purpose.</comment>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Something went wrong. Try again in a few minutes.</value>
+    <comment>Error message when bot throws exception or unable to perform a task (Generic error message).</comment>
+  </data>
+  <data name="NotificationCardMonthlyTitleText" xml:space="preserve">
+    <value>Your monthly digest</value>
+    <comment>Notification list card title text for monthly digest.</comment>
+  </data>
+  <data name="TeamPreferenceCardConfigureButtonText" xml:space="preserve">
+    <value>Configure</value>
+    <comment>Team configure preference card configure button text.</comment>
+  </data>
+  <data name="NotificationCardWeeklyTitleText" xml:space="preserve">
+    <value>Your weekly digest</value>
+    <comment>Notification list card title text for weekly digest.</comment>
+  </data>
+  <data name="DigestPreferenceCardHeaderText" xml:space="preserve">
+    <value>You can configure more topics or different ones as well as change how often the digest is posted.</value>
+    <comment>Digest preference card header text.</comment>
+  </data>
+  <data name="DigestPreferenceCardContent" xml:space="preserve">
+    <value>You can set digest preference by selecting the frequency and tab you wants to follow.</value>
+    <comment>Digest preference card content.</comment>
+  </data>
+  <data name="WelcomeCardSuggestText" xml:space="preserve">
+    <value>**Suggest:** Share content that's relevant to your team</value>
+    <comment>Welcome card suggest text.</comment>
+  </data>
+  <data name="PersonalWelcomeCardDiscoverButtonText" xml:space="preserve">
+    <value>Discover</value>
+    <comment>Welcome card button text.</comment>
+  </data>
+  <data name="WelcomeCardContent" xml:space="preserve">
+    <value>I'm here to help your team discover and share great articles, videos, and other types of content.</value>
+    <comment>Welcome card content text.</comment>
+  </data>
+  <data name="WelcomeCardCreatePrivateList" xml:space="preserve">
+    <value>**Save:** Create a private list of links to visit later</value>
+    <comment>Welcome card create private list text.</comment>
+  </data>
+  <data name="WelcomeCardDiscoverText" xml:space="preserve">
+    <value>**Discover:** Get content suggestions from colleagues</value>
+    <comment>Welcome card discover test.</comment>
+  </data>
+  <data name="WelcomeCardCommandHeaderText" xml:space="preserve">
+    <value>Here are the commands I follow and what they do:</value>
+    <comment>Welcome card commands header text.</comment>
+  </data>
+  <data name="WelcomeCardTitle" xml:space="preserve">
+    <value>Welcome!</value>
+    <comment>Welcome card title text.</comment>
+  </data>
+  <data name="NotificationListCardViewMoreButtonText" xml:space="preserve">
+    <value>View more</value>
+    <comment>Digest frequency list card view more button text.</comment>
+  </data>
+  <data name="TeamWelcomeCardConfigureButtonText" xml:space="preserve">
+    <value>Configure</value>
+    <comment>Team welcome card configure button text.</comment>
+  </data>
+  <data name="TagsLabelText" xml:space="preserve">
+    <value>Tags</value>
+    <comment>Label text to show on card.</comment>
+  </data>
+  <data name="CarouselCard1Text" xml:space="preserve">
+    <value>&lt;b&gt;Discover&lt;/b&gt; content by Tags, Type, Suggested by and sort by Popularity/latest based on your interest. &lt;br /&gt;
+&lt;b&gt;Add content&lt;/b&gt; to your private list and visit later to learn and grow.
+ &lt;br /&gt;
+&lt;b&gt;Share&lt;/b&gt; content that influenced or inspired you with your co-workers.</value>
+    <comment>Carousel Card text.</comment>
+  </data>
+  <data name="CarouselCard2Text" xml:space="preserve">
+    <value>Get a &lt;b&gt;digest of content&lt;/b&gt; that are added based on your preference in a channel to stay updated on the topics.</value>
+    <comment>Carousel Card text.</comment>
+  </data>
+  <data name="CarouselCard3Text" xml:space="preserve">
+    <value>&lt;b&gt;Add&lt;/b&gt; {0} to the Channel Tab based on tags to learn together with your team.
+&lt;br /&gt;
+&lt;b&gt;Share&lt;/b&gt; your favorite reads in a channel or chat to help your Peers grow.</value>
+    <comment>Carousel Card text.</comment>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>Share Now</value>
+    <comment>Application name to show on carousel card content.</comment>
+  </data>
+  <data name="WelcomeCardTeamDigestContent" xml:space="preserve">
+    <value>Get a **digest of content** that are added based on your preference in a channel to stay updated on the topics.</value>
+    <comment>Welcome card line one content for channel</comment>
+  </data>
+  <data name="WelcomeCardTeamShareContent" xml:space="preserve">
+    <value>**Search &amp; Share** your favorite reads in a channel or chat to help your Peers grow.</value>
+    <comment>Welcome card line two content for channel</comment>
+  </data>
+  <data name="BlogPostType" xml:space="preserve">
+    <value>Blog post</value>
+    <comment>Blog post type</comment>
+  </data>
+  <data name="BookPostType" xml:space="preserve">
+    <value>Book</value>
+    <comment>Book post type</comment>
+  </data>
+  <data name="OtherPostType" xml:space="preserve">
+    <value>Other</value>
+    <comment>Other post type</comment>
+  </data>
+  <data name="PodcastPostType" xml:space="preserve">
+    <value>Podcast</value>
+    <comment>Podcast post type</comment>
+  </data>
+  <data name="VideoPostType" xml:space="preserve">
+    <value>Video</value>
+    <comment>Video post type</comment>
+  </data>
+  <data name="VoteImageAltText" xml:space="preserve">
+    <value>Vote</value>
+    <comment>Text to show if vote icon fails to load</comment>
+  </data>
+</root>
