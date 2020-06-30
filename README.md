@@ -13,19 +13,16 @@ urlFragment: microsoft-teams-apps-sharenow
 | [Documentation](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-apps-sharenow/wiki/Solution-Overview) |
 | ---- | ---- | ---- |
 
+Using the Share Now app in Microsoft Teams, individuals can add bite-sized snippets of the content that they want to share with others in their organization. The content can be a post, video, blog, or podcast but the intent will the same i.e. to share knowledge with your colleagues. Users can also use the app to add posts to their list, configure tags to get a more tailored list of content posts and get a weekly or daily digest based on user preferences.
+The app encourages your peers and colleagues to read the shared content,  post new content, and build a healthy competitive environment to learn new topics from peers in the team.
 
-Using the Share Now app in Microsoft Teams, individuals in an organization will be able to add bite-sized information to the content that they want to share with others in the organization. The content can be of the type post, video, blog, podcast etc. but the intent will the same i.e. to introduce your colleagues to the content and share the knowledge with them. Users can also use the app to add posts to their personal list, configure tags to get a more tailored list of content posts & get a weekly/daily digest based on user preferences.
-The app will encourage your peers/colleagues to read or add the shared content to their bucket list and encourage them to post new content and build a healthy competitive environment to learn/read new topics from peers in the team.
-
-The app can be used in the following ways:-
+The app can be used in the following ways:
 - Discover new content shared across Organization in the personal tab
-- Search for content posts based on preference such as filtering based on tags, type of content etc.,
+- Search for content posts based on preference such as filtering based on tags, type of content, etc.
 - If a post looks interesting to you, upvote the content post and add it to you private list to bookmark it to read later
 - Collaborate using the Messaging extension, share your favorite reads with your colleagues
 - Install the app in a team and set up your monthly or weekly digest as per your preferences to stay updated on the topics
 - Configure the tab in a Channel filtered based on tags to learn together
-
-
 
 
 
