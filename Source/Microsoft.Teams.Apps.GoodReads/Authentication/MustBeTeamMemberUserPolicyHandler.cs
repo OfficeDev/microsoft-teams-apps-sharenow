@@ -92,11 +92,13 @@ namespace Microsoft.Teams.Apps.GoodReads.Authentication
                 {
                     // Read the request body, parse out the team tag entity object to get team Id.
                     var streamReader = new StreamReader(authorizationFilterContext.HttpContext.Request.Body, Encoding.UTF8, true, 1024, leaveOpen: true);
-                    using var jsonReader = new JsonTextReader(streamReader);
-                    var obj = JObject.Load(jsonReader);
-                    var tagEntity = obj.ToObject<TeamTagEntity>();
-                    authorizationFilterContext.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
-                    teamId = tagEntity.TeamId;
+                    using (var jsonReader = new JsonTextReader(streamReader))
+                    {
+                        var obj = JObject.Load(jsonReader);
+                        var teamEntity = obj.ToObject<TeamTagEntity>();
+                        authorizationFilterContext.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
+                        teamId = teamEntity.TeamId;
+                    }
                 }
                 else
                 {

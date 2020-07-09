@@ -69,25 +69,23 @@ namespace Microsoft.Teams.Apps.GoodReads.Helpers
         /// <returns>Returns a post type from the id value.</returns>
         public PostType GetPostType(int key)
         {
-            return key switch
+            switch (key)
             {
-                (int)PostTypeEnum.BlogPost =>
-                    new PostType { PostTypeName = this.localizer.GetString("BlogPostType"), IconName = "blogTypeDot.png", PostTypeId = 1 },
+                case (int)PostTypeEnum.BlogPost:
+                    return new PostType { PostTypeName = this.localizer.GetString("BlogPostType"), IconName = "blogTypeDot.png", PostTypeId = 1 };
 
-                (int)PostTypeEnum.Other =>
-                    new PostType { PostTypeName = this.localizer.GetString("OtherPostType"), IconName = "otherTypeDot.png", PostTypeId = 2 },
+                case (int)PostTypeEnum.Other:
+                    return new PostType { PostTypeName = this.localizer.GetString("OtherPostType"), IconName = "otherTypeDot.png", PostTypeId = 2 };
 
-                (int)PostTypeEnum.Podcast =>
-                    new PostType { PostTypeName = this.localizer.GetString("PodcastPostType"), IconName = "podcastTypeDot.png", PostTypeId = 3 },
+                case (int)PostTypeEnum.Podcast:
+                    return new PostType { PostTypeName = this.localizer.GetString("VideoPostType"), IconName = "videoTypeDot.png", PostTypeId = 4 };
 
-                (int)PostTypeEnum.Video =>
-                    new PostType { PostTypeName = this.localizer.GetString("VideoPostType"), IconName = "videoTypeDot.png", PostTypeId = 4 },
+                case (int)PostTypeEnum.Book:
+                    return new PostType { PostTypeName = this.localizer.GetString("BookPostType"), IconName = "bookTypeDot.png", PostTypeId = 5 };
 
-                (int)PostTypeEnum.Book =>
-                    new PostType { PostTypeName = this.localizer.GetString("BookPostType"), IconName = "bookTypeDot.png", PostTypeId = 5 },
-
-                _ => null,
-            };
+                default:
+                    return null;
+            }
         }
     }
 }
